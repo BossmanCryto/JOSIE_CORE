@@ -1,0 +1,20 @@
+name: JOSIE-SINGULARITY_SYNC
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  validate-scripts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify Hub Integrity
+        run: |
+          if [ -f "hub.sh" ]; then
+            echo "✅ Singularity Hub Script Found."
+            bash -n hub.sh || exit 1
+          else
+            echo "❌ Hub Script Missing from Repository."
+            exit 1
+          fi
