@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "josie_ouroboros"
-version = "0.1.0"
+name = "josie_native"
+version = "1.0.0"
