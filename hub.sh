@@ -2,7 +2,7 @@
 export PATH=$PATH:/usr/bin:/usr/local/bin:/system/bin:/system/xbin:/data/local/tmp
 echo "=========================================="
 echo "    🚀 JOSIE-SINGULARITY WEB HUB 🚀       "
-echo "        User: Cryptoboyyyy Active         "
+echo "        User: BossmanCryto Active         "
 echo "=========================================="
 
 # Bypassing local permission blocks by calling direct paths
